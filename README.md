@@ -8,7 +8,7 @@ play your recommendations.
 	- `pip install -r requirements.txt`
 2. set configuration in `.env` file
 	1. `mv .env.sample .env`
-	2. set `WATCH_COMMAND` your preferred command to watch videos with %(url)s being replaced with the video url
+	2. set `WATCH_COMMAND` your preferred command to watch videos with `%(url)s` being replaced with the video url
 		- e.g., `mpv %(url)s` would translate to `mpv https://youtube.com/watch?v=dQw...XcQ`
 		- no need for quoting, arguments are split by whitespace
 	3. set `LASTFM_SESSION_ID` to your last.fm session id cookie.  To find this:
