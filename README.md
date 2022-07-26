@@ -10,7 +10,7 @@ play your recommendations.
 	1. `mv .env.sample .env`
 	2. set `WATCH_COMMAND` your preferred command to watch videos with `%(url)s` being replaced with the video url
 		- e.g., `mpv %(url)s` would translate to `mpv https://youtube.com/watch?v=dQw...XcQ`
-		- no need for quoting, arguments are split by whitespace
+		- url is quoted automatically with `shlex.quote`
 	3. set `LASTFM_SESSION_ID` to your last.fm session id cookie.  To find this:
 		1. open [last.fm](https://www.last.fm) and log in (i did this on firefox so i can't guarantee it works for chrome et al.).
 		2. open the web inspector (press F12)
